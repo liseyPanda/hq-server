@@ -123,7 +123,10 @@ def push_to_elasticsearch():
         )
     
     return jsonify({"message": "Truck data updated to Elasticsearch!", "data": truck_data})
-
+# home
+@app.route('/')
+def home():
+    return "✅ HQ is up and running in OpenShift"
 # dashboard
 @app.route('/dashboard')
 def dashboard():
