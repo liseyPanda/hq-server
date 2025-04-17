@@ -37,7 +37,7 @@ def add_header(response):
 @app.route('/update', methods=['POST'])
 def update_data():
     data = request.json
-    index = data.get("index", "hq-index")
+    index = "trucks"
 
     # ✅ Set last_updated only once
     data["last_updated"] = datetime.utcnow().isoformat() + "Z"
