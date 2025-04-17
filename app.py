@@ -9,8 +9,8 @@ app = Flask(__name__)
 CORS(app)
 
 # Elasticsearch
-ELASTICSEARCH_URL = 'http://elasticsearch:9200'
-KIBANA_URL = "http://localhost:5601/app/dashboards#/view/cbc70cdf-a9fe-4ecd-87fc-2d95b208c5eb?_g=(refreshInterval:(pause:!t,value:60000),time:(from:'2023-12-01T12:00:00.000Z',to:'2023-12-01T12:02:00.000Z'))&_a=()"
+ELASTICSEARCH_URL = "https://elasticsearch-route-kompose-ndrc.apps.osc-trailer.trailer.ndrc.mil:9200"
+KIBANA_URL = 'https://kibana-kompose-ndrc.apps.osc-trailer.trailer.ndrc.mil/app/dashboards#/view/f4c19b48-01c6-4fa2-bcac-64a87da4c652?_g=(refreshInterval:(pause:!t,value:60000),time:(from:now%2Fd,to:now%2Fd))&_a=()'
 
 print("✅ hq is running and db is up")
 
